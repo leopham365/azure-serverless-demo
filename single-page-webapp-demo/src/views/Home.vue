@@ -276,14 +276,7 @@ export default {
             });
         }
 
-      this.$http
-        .post( `https://tcbcdevsubmitapplicationforexam.azurewebsites.net/api/SubmitAppForExam`,
-          // `http://localhost:7071/api/SubmitAppForExam`, 
-          newExamApp
-        )
-        .then(result => {
-          alert(JSON.stringify(result.data));
-        });
+      
     },
     onReset(evt) {
       evt.preventDefault();
