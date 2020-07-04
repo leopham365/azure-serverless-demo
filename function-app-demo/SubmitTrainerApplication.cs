@@ -15,10 +15,10 @@ namespace DemoAzureServerless
     {
         #region Secret Section: recommended to be moved to Azure Vault
 
-        // The Azure Cosmos DB endpoint for running this sample.
-        private static readonly string EndpointUri = "<Your Cosmo DB URL Endpoint>";
-        // The primary key for the Azure Cosmos account.
-        private static readonly string PrimaryKey = "<Your Cosmo DB Access Key>";
+        // The Azure Cosmos DB endpoint for running this sample.
+        private static readonly string EndpointUri = "https://leophamdemodb.documents.azure.com:443/";
+        // The primary key for the Azure Cosmos account.
+        private static readonly string PrimaryKey = "6WnFO1E6mLU2vGUg2VEeeLUULlumaNiPUpRoRVoGy6DLWFzf8d8j8lhpUxMCfABpctwGTbGizdSUCSFN3Nl5jQ==";
 
         #endregion
 

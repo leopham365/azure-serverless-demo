@@ -257,6 +257,8 @@ export default {
             let pipeline = new this.$newPipeline(new this.$AnonymousCredential());
             const azureBlobContainerURL = "https://tsbcstorageaccdev.blob.core.windows.net/$web/examApps/" 
                             + this.form.firstname + this.form.lastname + "/";
+            const portalDownload = "https://tsbcstorageaccdev.z19.web.core.windows.net/download?url=https://tsbcstorageaccdev.z19.web.core.windows.net/examApps/" + this.form.firstname + this.form.lastname + "/";
+            const sasToken = "?sv=2019-10-10&ss=bfqt&srt=sco&sp=rwdlacupx&se=2020-08-06T02:13:52Z&st=2020-06-17T18:13:52Z&spr=https,http&sig=O3Mmq9l1QoUn4aWKuWMppZIMJwkmfewjHfPhUK%2FRgkI%3D"
             
             this.form.files.forEach(file => {
                 const blockBlobClient = new this.$BlockBlobClient(azureBlobContainerURL + file.name + sasToken
@@ -276,7 +278,14 @@ export default {
             });
         }
 
-      
+      this.$http
+        .post( `https://tcbcdevsubmitapplicationforexam.azurewebsites.net/api/SubmitAppForExam`,
+          // `http://localhost:7071/api/SubmitAppForExam`, 
+          newExamApp
+        )
+        .then(result => {
+          alert(JSON.stringify(result.data));
+        });
     },
     onReset(evt) {
       evt.preventDefault();

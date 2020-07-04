@@ -5,12 +5,12 @@
             <b-navbar-brand href="#">
               <b-img src='./assets/logo.jpg' alt="Leo Pham" width='120' height="60"></b-img></b-navbar-brand>
 
-            <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+            <b-navbar-toggle id="navbar-toggle" target="nav-collapse"></b-navbar-toggle>
 
             <b-collapse id="nav-collapse" is-nav>
             <b-navbar-nav>
-                <b-nav-item href="/">Home</b-nav-item>
-                <b-nav-item href="/trainers">Trainers</b-nav-item>
+                <b-nav-item href="/" id="home-link">Home</b-nav-item>
+                <b-nav-item href="/trainers" id="trainer-link">Trainers</b-nav-item>
             </b-navbar-nav>
 
             <!-- Right aligned nav items -->
