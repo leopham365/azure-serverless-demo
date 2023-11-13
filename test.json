@@ -1,3 +1,4 @@
 {
-  "test":"JSON Test"
+  "test":"JSON Test",
+  "name":"Bob"
 }
