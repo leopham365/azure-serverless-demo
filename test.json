@@ -1,6 +1,7 @@
 {
+  "name": "pods-common-tests",
   "testSteps" : [
-    { "action" : "check", "question" : { "label": "Legal Business or Organization Name", "visible" : true, "required" : true } }
-    ,{ "action" : "check", "question" : { "label": "Canada Revenue Agency (CRA) Business Number or the first 9 digits of the Goods and Services Tax/Harmonized Sales Tax (GST/HST) number", "visible" : true, "required" : true } }
+    { "action" : "check", "question" : { "label": "Legal Business or Organization Name", "visible" : true, "required" : true } },
+    { "action" : "check", "question" : { "label": "Canada Revenue Agency (CRA) Business Number or the first 9 digits of the Goods and Services Tax/Harmonized Sales Tax (GST/HST) number", "visible" : true, "required" : true } }
   ]
 }
