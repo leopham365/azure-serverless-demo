@@ -6,8 +6,6 @@
       , { "action" : "Enter", "field" : { "label": "Legal Business or Organization Name", "value": "Leo Academy"} }
       , { "action" : "Expect", "field" : { "label": "Canada Revenue Agency (CRA) Business Number or the first 9 digits of the Goods and Services Tax/Harmonized Sales Tax (GST/HST) number", "visible" : true, "required" : true } }
       , { "action" : "Select", "field" : { "label": "Type of Business / Organization", "value": "Research Body (Institution)"} }
-, { "action" : "Click on the Next button." }
-      , { "action" : "Click on the Previous button." }
-      , { "action" : "Expect", "field" : { "label": "Mila added new field", "visible" : true, "required" : true } }
+      , { "action" : "Expect", "field" : { "label": "Mila added a new new field", "visible" : true, "required" : true } }
   ]
 }
