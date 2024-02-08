@@ -1,7 +1,7 @@
 {
   "name": "pods-common-tests",
   "testSteps" : [
-      { "action" : "open-new-tab", "url": "https://af-pods-dev.powerappsportals.com/application/?id=da89bc21-a7b1-ee11-a81c-000d3a0a4f4d", "descriptions" : "Open the KTTP S2 application in Applicant Portal DEV." }
+      { "action" : "open-new-tab", "url": "https://af-pods-dev.powerappsportals.com/application/?programid=be849e07-9e2b-ee11-bdf4-000d3af3ac95", "descriptions" : "Open the KTTP S2 application in Applicant Portal DEV." }
       , { "action" : "Expect", "field" : { "label": "Legal Business or Organization Name", "visible" : true, "required" : true } }
       , { "action" : "Enter", "field" : { "label": "Legal Business or Organization Name", "value": "Leo Academy"} }
       , { "action" : "Expect", "field" : { "label": "Canada Revenue Agency (CRA) Business Number or the first 9 digits of the Goods and Services Tax/Harmonized Sales Tax (GST/HST) number", "visible" : true, "required" : true } }
