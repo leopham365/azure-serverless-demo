@@ -11,7 +11,6 @@
         }
     ],
     "testSteps" : [
-      , {  }
       ,{ "action" : "open-new-tab", "url": "https://af-pods-dev.powerappsportals.com/application/?programid=be849e07-9e2b-ee11-bdf4-000d3af3ac95", "descriptions" : "Open the KTTP S2 application in Applicant Portal DEV." }
       , { "action" : "Expect", "field" : { "label": "Legal Business or Organization Name", "visible" : true, "required" : true } }
       , { "action" : "Enter", "field" : { "label": "Legal Business or Organization Name", "value": "TestAutomation Business"} }
