@@ -1,0 +1,8 @@
+{
+    "name": "Claim - ABPP S1 - Test Script",
+    "testSteps" : [
+      { "action" : "open-new-tab", "url": "https://af-pods-test.powerappsportals.com/claim/?id=f5af32c8-94c7-ee11-9078-000d3af4d2dd" }
+      , { "action" : "Test Case: Validating ABPP S1 Claim - Applicant Info step" }
+      , { "action" : "Expect", "field" : { "label": "Legal Business or Organization Name", "visible" : true, "required" : true } }
+    ]
+}
