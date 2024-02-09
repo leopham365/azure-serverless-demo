@@ -1,1 +1,23 @@
-
+{
+    "testPlan": "PODS - Test Automation in DEV",
+    "testSuites": [
+        {  
+            "name" : "Test Suite - KTTP S2",
+            "testCasesFile" : "https://github.com/leopham365/azure-serverless-demo/blob/master/kttp-s2-test-cases.json"
+        },
+        {  
+            "name" : "Test Suite - KTTP S1",
+            "testCasesFile" : "https://github.com/leopham365/azure-serverless-demo/blob/master/kttp-s1-test-cases.json"
+        }
+    ],
+    "testSteps" : [
+      { "action" : "open-new-tab", "url": "https://af-pods-dev.powerappsportals.com/application/?programid=be849e07-9e2b-ee11-bdf4-000d3af3ac95", "descriptions" : "Open the KTTP S2 application in Applicant Portal DEV." }
+      , { "action" : "Expect", "field" : { "label": "Legal Business or Organization Name", "visible" : true, "required" : true } }
+      , { "action" : "Enter", "field" : { "label": "Legal Business or Organization Name", "value": "TestAutomation Business"} }
+      , { "action" : "Expect", "field" : { "label": "Canada Revenue Agency (CRA) Business Number or the first 9 digits of the Goods and Services Tax/Harmonized Sales Tax (GST/HST) number", "visible" : true, "required" : true } }
+      , { "action" : "Select", "field" : { "label": "Type of Business / Organization", "value": "Service Provider"} }
+      , { "action" : "Enter", "field" : { "label": "Email to be used for correspondence on this application", "value": "test.automation@quartech.com"} }
+      , { "action" : "Expect", "field" : { "label": "Business - Street number", "visible" : true, "required" : true } }
+      , { "action" : "Expect", "field" : { "label": "Mila added a new new field", "visible" : true, "required" : true } }
+    ]
+}
