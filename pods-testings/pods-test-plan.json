@@ -1,5 +1,5 @@
 {
-    "testPlan": "PODS - Test Automation in DEV",
+    "name": "PODS Test Automation in DEV - Test Plan",
     "testSuites": [
         {  
             "name" : "Test Suite - KTTP S2",
