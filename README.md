@@ -1,1 +1,2 @@
 # azure-serverless-demo
+test
